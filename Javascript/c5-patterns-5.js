@@ -37,5 +37,4 @@ const RelojGlobal = (() => {
 
 })();
 
-// verificamos nuestra calculadore
-console.log(RelojGlobal.imprimirHora());
+// verificamos nuestro reloj mundial
