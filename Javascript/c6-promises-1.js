@@ -15,3 +15,5 @@ promise.then(function(data){
 function(error){
     console.log(error);
 })
+
+console.log("Llegue primero Yujuuuuu");
