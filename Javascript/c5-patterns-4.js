@@ -18,4 +18,4 @@ const CalculadoraSalario = (function() {
 
 })();
 
-// POdemos corroborar el encapsulamiento de nuestros métodos y propiedades.
+// Podemos corroborar el encapsulamiento de nuestros métodos y propiedades.
