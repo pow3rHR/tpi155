@@ -1,12 +1,17 @@
-const getData = function() {
+let promise = new Promise(function(resolve, reject){
 
-    const options = {
-        method: "GET"
-      };
+    setTimeout(function() {
+        if(true)
+            resolve("Se resolvio con exito");
+        reject(new Error("Error al cargar datos"));
+    }, "3000");
+});
 
-    fetch("/robots.txt", options)
-    .then(response => response.text())
-    .then(data => {
-        return data
-    });
-}
+console.log(promise); // primer estado.
+
+promise.then(function(data){
+    console.log(data);
+},
+function(error){
+    console.log(error);
+})

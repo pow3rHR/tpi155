@@ -19,3 +19,5 @@ const CalculadoraSalario = (function() {
 })();
 
 // Podemos corroborar el encapsulamiento de nuestros métodos y propiedades.
+console.log(CalculadoraSalario.CalcularSalarioFinal(800));
+console.log(CalculadoraSalario.CalcularSalarioNeto(800));

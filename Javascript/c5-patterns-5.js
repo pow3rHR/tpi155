@@ -38,3 +38,4 @@ const RelojGlobal = (() => {
 })();
 
 // verificamos nuestro reloj mundial
+console.log(RelojGlobal.imprimirHora("USA"));
