@@ -1,15 +1,32 @@
-const getData = async function() {
+const getData1 = function() {
 
     const options = {
-        method: "GET"
+        method: 'GET'
       };
 
-    await fetch("https://pokeapi.co/api/v2/pokemon/pikachu", options)
-        .then(response => response.text())
-        .then(data => {
-            return data;
-        })
+    const data = fetch('https://pokeapi.co/api/v2/pokemon/pikachu', options)
+    .then(response => response.text());
+
+    return data;
 }
 
-const data = getData();
-console.log(data);
+getData1().then(response => console.log(response));
+
+console.log("/////////////////////////////////////////");
+/////////////////////////
+
+const getData2 = async function() {
+    const options = {
+        method: "GET"
+    };
+
+    const response = await fetch("https://pokeapi.co/api/v2/pokemon/pikachu", options);
+    const data = await response.text();
+    return data;
+}
+
+getData2().then(data => {
+    console.log(data);
+}).catch(error => {
+    console.error("Error:", error);
+});
