@@ -7,6 +7,7 @@ class Perro {
     public $color = 'negro mate';
     public $raza;
     public $tamanio;
+    public const patas = 4;
 
     /* Los métodos son los comportamientos propios que puede tener ese objeto */
     public function ladrar() {
@@ -19,3 +20,4 @@ class Perro {
 
 $labrador = new Perro;
 echo $labrador->ladrar();
+

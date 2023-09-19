@@ -11,14 +11,14 @@ class Financiera {
 
     
     private function realizarDeducciones() {
-        return $this->salario - (($this->salario * $this->$isss) + ($this->salario * $this->$afp));
+        return $this->salario - (($this->salario * $this->isss) + ($this->salario * $this->afp));
     }
     /* Dejamos la complejidad oculta. Observa que un usuario dado solo necesita el salario neto, sin importar
     cómo se obtuvo, solo necesita obtener un resultado confiable. */
     public function calcularSalarioNeto($salrioBruto) {
         $this->salario = $salrioBruto;
         if ($salrioBruto < 500) {
-            return $this->realizarDeducciones()
+            return $this->realizarDeducciones();
         }
         else {
             // acá se podría implementar el cálculo de la renta, por ejemplo.

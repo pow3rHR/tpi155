@@ -11,16 +11,25 @@ class Animal {
 }
 
 class Tortuga extends Animal {
-    echo __CLASS__;
+
+    public function comer() {
+        echo __CLASS__;
+    }
     
 }
 
 class Gallina extends Animal {
-    echo __CLASS__;
+
+    public function comer() {
+        echo __CLASS__;
+    }
 }
 
 $torguga = new Tortuga; // Es un animal, pero concretamente es una tortuga.
 $gallina = new Gallina; // Es un animal, pero concretamente es una gallina.
 
+$torguga->comer();
+
 // En lenguajes fuertemente tipados es más fácil ver el polimorfismo al momento de la creación.
 // La instancia anterior podría verse como "Animal $tortuga = new Tortuga;"
+

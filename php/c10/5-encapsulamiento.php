@@ -14,3 +14,4 @@ class Subred extends Red {
 
 $red = new Red;
 // en el entorno global, solamente tenemos disponible nombre
+
